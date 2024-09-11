@@ -183,7 +183,7 @@ section {
   width: 100%;
   max-width: 1200px; // You can adjust this value based on your design needs
   margin: 0 auto; // Centers the container horizontally
-  padding: 0 20px; // Adds padding to prevent content from touching the edges of the screen
+  padding: 0 0; // Adds padding to prevent content from touching the edges of the screen
 
   // Optional: Media queries for responsiveness
   @media (max-width: 1200px) {
@@ -200,7 +200,7 @@ section {
 
   @media (max-width: 600px) {
     max-width: 100%; // Full width on smaller screens
-    padding: 0 10px; // Less padding on smaller screens
+    padding: 0 0; // Less padding on smaller screens
   }
 }
 
@@ -452,14 +452,6 @@ form button[type="submit"]:hover {
     }
   }
   
-  @media (max-width: 600px) {
-
-  .skills .skill-list .skill {
-    margin: 0;
-    font-size: 14px;
-    padding: 10px 10px;
-  }
-}
 
 .fish-container {
     position: fixed;
@@ -770,10 +762,20 @@ section p, .about p, .skills p, .projects p, .contact p {
 
 section {
   padding: 40px 15px;
-  overflow: hidden;
 }
-header {
-  overflow: hidden;
+
+.skills .skill-list .skill {
+  margin: 0;
+  font-size: 14px;
+  padding: 6px 10px;
+}
+
+.timeline-year {
+  font-size: 1rem !important;
+}
+
+.timeline-item {
+  margin-bottom: 25px;
 }
 }
 
