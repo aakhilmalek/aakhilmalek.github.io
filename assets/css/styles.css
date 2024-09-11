@@ -6,6 +6,7 @@ body {
   background-color: #f8f9fa;
   color: #343a40;
   line-height: 1.5;
+  font-size: 16px;
 }
 
 .header {
@@ -94,6 +95,27 @@ section:nth-child(even) {
 section .container {
   position: relative;
   z-index: 10;
+}
+
+.about ul {
+  list-style-type: none;
+  padding: 0;
+  display: inline-block;
+}
+.about li {
+  margin: 5px 10px;
+  display: inline-block;
+}
+.about a {
+  text-decoration: none;
+  color: #343a40;
+  line-height: 1.5;
+  font-size: 18px;
+  font-weight: 500;
+}
+.about a:hover {
+  text-decoration: underline;
+  color: #000;
 }
 
 .about,
@@ -530,7 +552,7 @@ form button[type=submit]:hover {
   width: 100%;
   margin: 0 auto;
   position: relative;
-  padding: 50px 0;
+  padding: 30px 0 10px 0;
 }
 
 .timeline::before {
@@ -584,7 +606,7 @@ form button[type=submit]:hover {
   height: 1px;
   border-top: 2px dashed #000;
   position: absolute;
-  right: -6%;
+  right: -5%;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -600,7 +622,7 @@ form button[type=submit]:hover {
 }
 
 .timeline-item:nth-child(even) .timeline-year::before {
-  left: -6%;
+  left: -5%;
 }
 
 .timeline-content {

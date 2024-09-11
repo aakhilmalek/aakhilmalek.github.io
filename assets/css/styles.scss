@@ -11,6 +11,7 @@ body {
   background-color: $light-color;
   color: $dark-color;
   line-height: 1.5;
+  font-size: 16px;
 }
 
 .header {
@@ -116,6 +117,29 @@ section {
     position: relative;
     z-index: 10;
   }
+}
+
+.about {
+  ul {
+    list-style-type: none;
+    padding: 0;
+    display: inline-block;
+    }
+    li {
+        margin: 5px 10px;
+        display: inline-block;
+    }
+    a {
+        text-decoration: none;
+        color: $dark-color;
+        line-height: 1.5;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    a:hover {
+        text-decoration: underline;
+        color: #000;
+    }
 }
 
 .about,
@@ -585,7 +609,7 @@ form button[type="submit"]:hover {
   width: 100%;
   margin: 0 auto;
   position: relative;
-  padding: 50px 0;
+  padding: 30px 0 10px 0;
 }
 
 .timeline::before {
@@ -639,7 +663,7 @@ form button[type="submit"]:hover {
   height: 1px;
   border-top: 2px dashed #000;
   position: absolute;
-  right: -6%;
+  right: -5%;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -655,7 +679,7 @@ form button[type="submit"]:hover {
 }
 
 .timeline-item:nth-child(even) .timeline-year::before {
-  left: -6%;
+  left: -5%;
 }
 
 .timeline-content {
