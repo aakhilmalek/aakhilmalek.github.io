@@ -186,13 +186,16 @@ section .container {
 .project-section {
   display: flex;
 }
+.project-section a {
+  color: #000;
+}
 .project-section .project-content {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
 .project-section .tabs {
-  min-width: 200px;
+  min-width: 250px;
   position: sticky;
   top: 50px;
 }
@@ -227,15 +230,21 @@ section .container {
 .project-section .tab-content .tab-item.active {
   display: block;
 }
+.project-section .tab-content .tab-item .img-container {
+  position: relative;
+}
 .project-section .tab-content .tab-item img {
   max-width: 100%;
   height: auto;
   width: 100%;
+  min-height: 450px;
   max-height: 450px;
   border-radius: 10px;
   margin-bottom: 15px;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
 }
 .project-section .tab-content .tab-item .description h2 {
   font-size: 24px;

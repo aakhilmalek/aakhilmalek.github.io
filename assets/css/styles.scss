@@ -207,13 +207,17 @@ section {
 .project-section {
   display: flex;
 
+  a {
+    color: #000;
+  }
+
   .project-content {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
   }
   .tabs {
-    min-width: 200px;
+    min-width: 250px;
     position: sticky;
     top: 50px;
     ul {
@@ -249,15 +253,24 @@ section {
       &.active {
         display: block;
       }
+
+      .img-container {
+        position: relative;
+      }
       img {
         max-width: 100%;
         height: auto;
         width: 100%;
+        min-height: 450px;
         max-height: 450px;
         border-radius: 10px;
         margin-bottom: 15px;
         object-fit: cover;
+        object-position: top;
       }
+      
+    
+
       .description {
         h2 {
           font-size: 24px;
@@ -778,4 +791,3 @@ section {
   margin-bottom: 25px;
 }
 }
-
