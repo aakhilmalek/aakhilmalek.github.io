@@ -61,7 +61,7 @@
             "https://github.com/aakhilmalek"
           ]
         }
-        </script>
+  </script>
 
 <body>
   <header class="header">
@@ -360,32 +360,6 @@
 
   <script>
 
-
-
-    // Function to handle scroll event and toggle header visibility
-    function handleScroll() {
-      const header = document.querySelector('.header-top');
-      let lastScrollTop = 0;
-
-      window.addEventListener('scroll', () => {
-        let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-
-        if (currentScroll > lastScrollTop) {
-          // Scrolling down
-          header.classList.remove('header-show');
-        } else {
-          // Scrolling up
-          header.classList.add('header-show');
-        }
-
-        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
-      });
-    }
-
-    // Initialize the function
-    handleScroll();
-
-    //js
 
     const navWrapper = document.querySelector('.nav-wrapper');
     const leftBtn = document.querySelector('.nav-left-btn');
