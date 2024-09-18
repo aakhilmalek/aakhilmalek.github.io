@@ -50,7 +50,8 @@ body {
   // background: $primary-color;
   color: white;
   padding: 70px 0 20px 0;
-  background-image: url("/assets/image/banner.jpg");
+  background-image: url("../image/banner.jpg");
+  background-repeat: no-repeat;
   background-position: top left;
   background-size: cover;
   overflow: hidden;
@@ -78,6 +79,7 @@ body {
       font-size: 24px;
       font-weight: bold;
       white-space: nowrap;
+      color: #1f1f1f;
     }
 
     .nav-links {
@@ -88,7 +90,7 @@ body {
         margin-left: 20px;
 
         a {
-          color: white;
+          color: #1f1f1f;
           text-decoration: none;
           font-weight: bold;
 
@@ -482,8 +484,8 @@ form button[type="submit"]:hover {
 
 
   .project-section .tabs ul li {
-    font-size: 14px;
-    padding: 10px 10px;
+    font-size: 13px;
+    padding: 6px 10px;
     display: inline-flex;
   }
 
@@ -503,6 +505,7 @@ form button[type="submit"]:hover {
     width: auto;
     height: auto !important;
     max-height: unset;
+    min-height: unset;
   }
 
 
@@ -831,8 +834,8 @@ form button[type="submit"]:hover {
 }
 
 button {
-  background-color: #000;
-  color: #fff;
+  background-color: transparent;
+  color: #1f1f1f;
   border: none;
   padding: 10px;
   cursor: pointer;
@@ -968,11 +971,8 @@ section {
   }
 }
 
-.header-text-light {
-  color: #fff; /* Light text color for dark backgrounds */
-}
-
-/* Dark text color */
-.header-text-dark {
-  color: #333; /* Dark text color for light backgrounds */
+@media (max-width: 768px) {
+  .testimonial {
+    padding: 20px 15px;
+  }
 }

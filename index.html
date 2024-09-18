@@ -40,16 +40,16 @@
   <meta name="theme-color" content="#ffffff">
 
   <!-- Security & Privacy -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self';">
+  <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self';">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="referrer" content="no-referrer-when-downgrade">
-  <meta name="permissions-policy" content="geolocation=(self)">
+  <meta name="permissions-policy" content="geolocation=(self)"> -->
 
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 
 <!-- Structured Data (JSON-LD) -->
-<script type="application/ld+json">
+<!-- <script type="application/ld+json">
         {
           "@context": "https://schema.org",
           "@type": "Person",
@@ -61,7 +61,7 @@
             "https://github.com/aakhilmalek"
           ]
         }
-  </script>
+  </script> -->
 
 <body>
   <header class="header">
@@ -69,14 +69,6 @@
       <div class="container">
         <nav class="navbar">
           <div class="logo">Aakhil M.</div>
-          <!-- <ul class="nav-links">
-              <li><a href="#about">About</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#work">Experiance</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#review">Testimonial</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul> -->
 
           <div class="menu-container">
             <button class="nav-left-btn">◀</button>
@@ -359,30 +351,30 @@
   </main>
 
   <script>
+const navWrapper = document.querySelector('.nav-wrapper');
+const navLeftBtn = document.querySelector('.nav-left-btn');
+const navRightBtn = document.querySelector('.nav-right-btn');
+
+// Amount to scroll per click
+const scrollAmount = 200;
+
+navLeftBtn.addEventListener('click', () => {
+  navWrapper.scrollBy({
+    left: -scrollAmount,
+    behavior: 'smooth'
+  });
+});
+
+navRightBtn.addEventListener('click', () => {
+  navWrapper.scrollBy({
+    left: scrollAmount,
+    behavior: 'smooth'
+  });
+});
 
 
-    const navWrapper = document.querySelector('.nav-wrapper');
-    const leftBtn = document.querySelector('.nav-left-btn');
-    const rightBtn = document.querySelector('.nav-right-btn');
 
-    leftBtn.addEventListener('click', () => {
-      navWrapper.scrollBy({ left: -100, behavior: 'smooth' });
-    });
-
-    rightBtn.addEventListener('click', () => {
-      navWrapper.scrollBy({ left: 100, behavior: 'smooth' });
-    });
-
-    document.querySelectorAll(".tabs li").forEach((tab) => {
-      tab.addEventListener("click", function () {
-        document.querySelector(".tabs li.active").classList.remove("active");
-        document.querySelector(".tab-item.active").classList.remove("active");
-
-        this.classList.add("active");
-        document.getElementById(this.dataset.tab).classList.add("active");
-      });
-    });
-
+// new
     function smoothScroll(target, duration) {
       const targetPosition = target.getBoundingClientRect().top;
       const startPosition = window.pageYOffset;
