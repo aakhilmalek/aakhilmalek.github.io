@@ -351,30 +351,43 @@
   </main>
 
   <script>
-const navWrapper = document.querySelector('.nav-wrapper');
-const navLeftBtn = document.querySelector('.nav-left-btn');
-const navRightBtn = document.querySelector('.nav-right-btn');
+    // tab
+    document.querySelectorAll(".tabs li").forEach((tab) => {
+      tab.addEventListener("click", function () {
+        document.querySelector(".tabs li.active").classList.remove("active");
+        document.querySelector(".tab-item.active").classList.remove("active");
 
-// Amount to scroll per click
-const scrollAmount = 200;
+        this.classList.add("active");
+        document.getElementById(this.dataset.tab).classList.add("active");
+      });
+    });
 
-navLeftBtn.addEventListener('click', () => {
-  navWrapper.scrollBy({
-    left: -scrollAmount,
-    behavior: 'smooth'
-  });
-});
+    // tab end
 
-navRightBtn.addEventListener('click', () => {
-  navWrapper.scrollBy({
-    left: scrollAmount,
-    behavior: 'smooth'
-  });
-});
+    // menu scroll
+    const navWrapper = document.querySelector('.nav-wrapper');
+    const navLeftBtn = document.querySelector('.nav-left-btn');
+    const navRightBtn = document.querySelector('.nav-right-btn');
 
+    // Amount to scroll per click
+    const scrollAmount = 200;
 
+    navLeftBtn.addEventListener('click', () => {
+      navWrapper.scrollBy({
+        left: -scrollAmount,
+        behavior: 'smooth'
+      });
+    });
 
-// new
+    navRightBtn.addEventListener('click', () => {
+      navWrapper.scrollBy({
+        left: scrollAmount,
+        behavior: 'smooth'
+      });
+    });
+    // menu scroll
+
+    // new
     function smoothScroll(target, duration) {
       const targetPosition = target.getBoundingClientRect().top;
       const startPosition = window.pageYOffset;
@@ -413,6 +426,9 @@ navRightBtn.addEventListener('click', () => {
         smoothScroll(targetSection, 800);
       });
     });
+
+    // ned
   </script>
 </body>
+
 </html>
