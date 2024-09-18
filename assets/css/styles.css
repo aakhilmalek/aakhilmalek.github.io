@@ -40,6 +40,7 @@ body {
 .header .navbar .logo {
   font-size: 24px;
   font-weight: bold;
+  white-space: nowrap;
 }
 .header .navbar .nav-links {
   list-style: none;
@@ -688,10 +689,61 @@ form button[type=submit]:hover {
     left: -5px !important;
   }
 }
+.menu-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.nav-wrapper {
+  overflow-x: hidden;
+  white-space: nowrap;
+  width: calc(100% - 60px); /* Adjust based on button size */
+}
+
+.nav-links {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.header .navbar .nav-links {
+  justify-content: flex-end;
+}
+
+.nav-left-btn, .nav-right-btn {
+  flex-shrink: 0;
+  z-index: 1;
+  display: none;
+}
+
 @media (max-width: 768px) {
+  .nav-left-btn, .nav-right-btn {
+    display: block;
+    background-color: transparent;
+  }
+  .header .navbar .nav-links {
+    justify-content: unset;
+  }
   .header .navbar .logo {
     font-size: 20px;
     font-weight: 600;
+    display: none;
   }
   .header .navbar .nav-links li a {
     font-size: 14px;

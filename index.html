@@ -11,14 +11,29 @@
       <div class="container">
         <nav class="navbar">
           <div class="logo">Aakhil M.</div>
-          <ul class="nav-links">
+          <!-- <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#work">Experiance</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#review">Testimonial</a></li>
             <li><a href="#contact">Contact</a></li>
-          </ul>
+          </ul> -->
+
+          <div class="menu-container">
+            <button class="nav-left-btn">◀</button>
+            <div class="nav-wrapper">
+              <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#work">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#review">Testimonial</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+            <button class="nav-right-btn">▶</button>
+          </div>
         </nav>
         <div class="hero">
           <h1>Hello, I'm Aakhil Malek</h1>
@@ -250,7 +265,7 @@
         </div>
       </section>
 
-      <div class="fish-container">
+      <!-- <div class="fish-container">
         <img
           src="https://img.icons8.com/fluency/100/000000/fish.png"
           alt="Fish"
@@ -264,7 +279,7 @@
         <div class="bubbles"></div>
         <div class="bubbles"></div>
         <div class="bubbles"></div>
-      </div>
+      </div> -->
 
       <footer class="footer">
         <div class="footer-content">
@@ -279,6 +294,19 @@
     </main>
 
     <script>
+
+const navWrapper = document.querySelector('.nav-wrapper');
+const leftBtn = document.querySelector('.nav-left-btn');
+const rightBtn = document.querySelector('.nav-right-btn');
+
+leftBtn.addEventListener('click', () => {
+  navWrapper.scrollBy({ left: -100, behavior: 'smooth' });
+});
+
+rightBtn.addEventListener('click', () => {
+  navWrapper.scrollBy({ left: 100, behavior: 'smooth' });
+});
+
       document.querySelectorAll(".tabs li").forEach((tab) => {
         tab.addEventListener("click", function () {
           document.querySelector(".tabs li.active").classList.remove("active");
