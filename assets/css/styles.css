@@ -1,12 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+/* Optional: Normalize specific properties */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; /* reset margins for headers */
+}
+
+p {
+  margin: 0 0 1em; /* add spacing below paragraphs */
+}
+
+ul, ol {
+  margin: 0; /* reset margins for lists */
+  padding: 0; /* reset padding for lists */
+}
+
+a {
+  color: inherit; /* use inherited text color for links */
+  text-decoration: none; /* remove underline from links */
+}
+
+table {
+  border-collapse: collapse; /* ensure borders are collapsed */
+  width: 100%; /* make tables span full width */
+}
+
+img {
+  max-width: 100%; /* ensure images are responsive */
+  height: auto; /* maintain aspect ratio */
+}
+
 body {
   font-family: "Inter", sans-serif !important;
   margin: 0;
   padding: 0;
   background-color: #f8f9fa;
   color: #343a40;
+  font-size: 100%;
   line-height: 1.5;
-  font-size: 16px;
 }
 
 .header {
@@ -848,4 +877,13 @@ button {
 }
 .testimonial .author strong {
   margin-right: 10px;
+}
+
+.header-text-light {
+  color: #fff; /* Light text color for dark backgrounds */
+}
+
+/* Dark text color */
+.header-text-dark {
+  color: #333; /* Dark text color for light backgrounds */
 }/*# sourceMappingURL=styles.css.map */
