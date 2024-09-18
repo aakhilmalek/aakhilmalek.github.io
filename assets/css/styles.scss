@@ -18,8 +18,8 @@ body {
   position: relative;
   // background: $primary-color;
   color: white;
-  padding: 20px 0;
-  background-image: url("https://images.unsplash.com/photo-1458682625221-3a45f8a844c7?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  padding: 70px 0 20px 0;
+  background-image: url("/assets/image/banner.jpg");
   background-position: top left;
   background-size: cover;
   overflow: hidden;
@@ -86,7 +86,27 @@ body {
   }
 }
 
+// header
 
+.header-top {
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.1);
+  background-color: rgba(233, 239, 235, 0.25);
+  border-color: rgb(255, 255, 255);
+  position: fixed;
+  width: 100%;
+  top: 0; /* Start hidden above the viewport */
+  transition: top 0.3s ease-in-out; /* Smooth transition */
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 99;
+}
+
+/* Class to show the header */
+.header-show {
+  top: 0;
+}
+// 
 
 section {
   padding: 60px 15px;

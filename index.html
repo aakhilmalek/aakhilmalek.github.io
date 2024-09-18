@@ -63,33 +63,38 @@
         </script>
   <body>
     <header class="header">
-      <div class="container">
-        <nav class="navbar">
-          <div class="logo">Aakhil M.</div>
-          <!-- <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#work">Experiance</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#review">Testimonial</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul> -->
-
-          <div class="menu-container">
-            <button class="nav-left-btn">◀</button>
-            <div class="nav-wrapper">
-              <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#work">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#review">Testimonial</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
+      <div class="header-top">
+        <div class="container">
+          <nav class="navbar">
+            <div class="logo">Aakhil M.</div>
+            <!-- <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#work">Experiance</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#review">Testimonial</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul> -->
+  
+            <div class="menu-container">
+              <button class="nav-left-btn">◀</button>
+              <div class="nav-wrapper">
+                <ul class="nav-links">
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#skills">Skills</a></li>
+                  <li><a href="#work">Experience</a></li>
+                  <li><a href="#projects">Projects</a></li>
+                  <li><a href="#review">Testimonial</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </div>
+              <button class="nav-right-btn">▶</button>
             </div>
-            <button class="nav-right-btn">▶</button>
+          </nav>
           </div>
-        </nav>
+      </div>
+     
+<div class="container">
         <div class="hero">
           <h1>Hello, I'm Aakhil Malek</h1>
           <p>I'm a passionate UI developer.</p>
@@ -349,6 +354,32 @@
     </main>
 
     <script>
+
+// Function to handle scroll event and toggle header visibility
+function handleScroll() {
+    const header = document.querySelector('.header-top');
+    let lastScrollTop = 0;
+    
+    window.addEventListener('scroll', () => {
+        let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+        
+        if (currentScroll > lastScrollTop) {
+            // Scrolling down
+            header.classList.remove('header-show');
+        } else {
+            // Scrolling up
+            header.classList.add('header-show');
+        }
+        
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+    });
+}
+
+// Initialize the function
+handleScroll();
+
+
+      //js
 
 const navWrapper = document.querySelector('.nav-wrapper');
 const leftBtn = document.querySelector('.nav-left-btn');
