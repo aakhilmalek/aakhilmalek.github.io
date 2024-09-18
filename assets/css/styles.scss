@@ -71,10 +71,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 0;
     position: relative;
     z-index: 999;
-
+    max-width: 100vw;
     .logo {
       font-size: 24px;
       font-weight: bold;
@@ -814,6 +814,7 @@ form button[type="submit"]:hover {
   align-items: center;
   position: relative;
   width: 100%;
+  max-width: 100vw;
 }
 
 .nav-wrapper {
@@ -975,4 +976,8 @@ section {
   .testimonial {
     padding: 20px 15px;
   }
+}
+
+.work {
+  overflow: hidden;
 }
