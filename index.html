@@ -351,6 +351,18 @@
   </main>
 
   <script>
+
+    // scroll
+
+    window.onscroll = function() {
+      const header = document.getElementsByClassName("header-top")[0];
+      
+      if (window.scrollY > 50) {
+        header.classList.add("header-scrolled");
+      } else {
+        header.classList.remove("header-scrolled");
+      }
+    };
     // tab
     document.querySelectorAll(".tabs li").forEach((tab) => {
       tab.addEventListener("click", function () {

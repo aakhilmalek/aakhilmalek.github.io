@@ -72,7 +72,7 @@ body {
   font-size: 24px;
   font-weight: bold;
   white-space: nowrap;
-  color: #1f1f1f;
+  color: #fff;
 }
 .header .navbar .nav-links {
   list-style: none;
@@ -82,9 +82,9 @@ body {
   margin-left: 20px;
 }
 .header .navbar .nav-links li a {
-  color: #1f1f1f;
+  color: #fff;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
 }
 .header .navbar .nav-links li a:hover {
   color: #000;
@@ -108,7 +108,7 @@ body {
   border-bottom: 1px solid rgba(51, 51, 51, 0.1);
   background-color: rgba(233, 239, 235, 0.25);
   border-color: rgb(255, 255, 255);
-  position: fixed;
+  position: absolute;
   width: 100%;
   top: 0; /* Start hidden above the viewport */
   transition: top 0.3s ease-in-out; /* Smooth transition */
@@ -117,6 +117,25 @@ body {
   z-index: 99;
 }
 
+.header-scrolled {
+  position: fixed;
+  animation: slideDown 0.7s ease-in-out forwards;
+}
+.header-scrolled .navbar .logo {
+  color: #1f1f1f;
+}
+.header-scrolled .navbar .nav-links li a {
+  color: #1f1f1f;
+}
+
+@keyframes slideDown {
+  0% {
+    top: -70px;
+  }
+  100% {
+    top: 0;
+  }
+}
 /* Class to show the header */
 .header-show {
   top: 0;
