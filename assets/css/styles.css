@@ -808,9 +808,15 @@ button {
   .nav-left-btn, .nav-right-btn {
     display: block;
     background-color: transparent;
+    color: #fff;
   }
   .header .navbar .nav-links {
     justify-content: unset;
+  }
+  .header-scrolled .nav-left-btn, .header-scrolled .nav-right-btn {
+    display: block;
+    background-color: transparent;
+    color: #000;
   }
   .header .navbar .logo {
     font-size: 20px;
@@ -838,13 +844,13 @@ button {
     font-size: 20px;
   }
   section h2 {
-    font-size: 32px;
+    font-size: 30px;
   }
   section p, .about p, .skills p, .projects p, .contact p {
     font-size: 16px;
   }
   section {
-    padding: 40px 15px;
+    padding: 70px 15px 40px 15px;
   }
   .skills .skill-list .skill {
     margin: 0;
@@ -906,6 +912,15 @@ button {
 @media (max-width: 768px) {
   .testimonial {
     padding: 20px 15px;
+  }
+  .about a {
+    font-size: 16px;
+  }
+  .about li {
+    margin: 5px;
+  }
+  .testimonial h3 {
+    font-size: 18px;
   }
 }
 .work {
