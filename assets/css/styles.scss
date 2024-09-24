@@ -2,7 +2,7 @@ $primary-color: #000;
 $secondary-color: #000;
 $light-color: #f8f9fa;
 $dark-color: #343a40;
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 /* Optional: Normalize specific properties */
 h1,
@@ -967,6 +967,15 @@ button {
 .testimonial .stars span {
   color: #a2cf40;
   font-size: 24px;
+
+  i {
+    margin-right: 8px;
+
+    img {
+      height: 20px;
+      width: 20px;
+    }
+  }
 }
 
 .testimonial h3 {
