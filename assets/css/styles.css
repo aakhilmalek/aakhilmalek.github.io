@@ -450,10 +450,22 @@ form button[type=submit]:hover {
   form button[type=submit] {
     width: 100%;
   }
+  .project-section .tabs ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
   .project-section .tabs ul li {
-    font-size: 13px;
-    padding: 6px 10px;
+    font-size: 12px;
+    padding: 6px 5px;
     display: inline-flex;
+    max-width: calc(33.33% - 14px);
+    min-width: calc(33.33% - 14px);
+    align-items: center;
+    justify-content: center;
+    word-break: break-word;
+    margin-right: 4px;
   }
   .project-section .project-content {
     flex-direction: column;
