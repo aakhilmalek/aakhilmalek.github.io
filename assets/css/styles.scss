@@ -4,9 +4,13 @@ $light-color: #f8f9fa;
 $dark-color: #343a40;
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
-
 /* Optional: Normalize specific properties */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0; /* reset margins for headers */
 }
 
@@ -14,7 +18,8 @@ p {
   margin: 0 0 1em; /* add spacing below paragraphs */
 }
 
-ul, ol {
+ul,
+ol {
   margin: 0; /* reset margins for lists */
   padding: 0; /* reset padding for lists */
 }
@@ -33,7 +38,6 @@ img {
   max-width: 100%; /* ensure images are responsive */
   height: auto; /* maintain aspect ratio */
 }
-
 
 body {
   font-family: "Inter", sans-serif !important;
@@ -128,8 +132,8 @@ body {
   border-color: rgb(255, 255, 255);
   position: absolute;
   width: 100%;
-  top: 0; /* Start hidden above the viewport */
-  transition: top 0.3s ease-in-out; /* Smooth transition */
+  top: 0;
+  transition: top 0.3s ease-in-out;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   z-index: 99;
@@ -140,7 +144,6 @@ body {
   animation: slideDown 0.7s ease-in-out forwards;
 
   .navbar {
-   
     .logo {
       color: #1f1f1f;
     }
@@ -168,13 +171,13 @@ body {
 .header-show {
   top: 0;
 }
-// 
+//
 
 section {
   padding: 60px 15px;
   text-align: center;
   margin-bottom: 0;
-  
+
   h2 {
     font-size: 36px;
     margin-bottom: 18px;
@@ -207,22 +210,22 @@ section {
     list-style-type: none;
     padding: 0;
     display: inline-block;
-    }
-    li {
-        margin: 5px 10px;
-        display: inline-block;
-    }
-    a {
-        text-decoration: none;
-        color: $dark-color;
-        line-height: 1.5;
-        font-size: 18px;
-        font-weight: 500;
-    }
-    a:hover {
-        text-decoration: underline;
-        color: #000;
-    }
+  }
+  li {
+    margin: 5px 10px;
+    display: inline-block;
+  }
+  a {
+    text-decoration: none;
+    color: $dark-color;
+    line-height: 1.5;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  a:hover {
+    text-decoration: underline;
+    color: #000;
+  }
 }
 
 .about,
@@ -288,11 +291,10 @@ section {
 
 .container {
   width: 100%;
-  max-width: 1200px; // You can adjust this value based on your design needs
-  margin: 0 auto; // Centers the container horizontally
-  padding: 0 0; // Adds padding to prevent content from touching the edges of the screen
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 0;
 
-  // Optional: Media queries for responsiveness
   @media (max-width: 1200px) {
     max-width: 1000px;
   }
@@ -306,8 +308,8 @@ section {
   }
 
   @media (max-width: 600px) {
-    max-width: 100%; // Full width on smaller screens
-    padding: 0 0; // Less padding on smaller screens
+    max-width: 100%;
+    padding: 0 0;
   }
 }
 
@@ -375,8 +377,6 @@ section {
         object-fit: cover;
         object-position: top;
       }
-      
-    
 
       .description {
         h2 {
@@ -392,16 +392,17 @@ section {
   }
 }
 @keyframes wave {
-    0% {
-        background-position: 0% 40%;
-    }
-    50% {
-        background-position: 100% 40%;
-    }
-    100% {
-        background-position: 0% 40%;
-    }
+  0% {
+    background-position: 0% 40%;
+  }
+  50% {
+    background-position: 100% 40%;
+  }
+  100% {
+    background-position: 0% 40%;
+  }
 }
+
 .footer {
   background: $primary-color;
   color: #fff;
@@ -436,7 +437,6 @@ section {
   }
 }
 
-/* General form styling */
 form {
   max-width: 600px;
   margin: 0 auto;
@@ -445,7 +445,6 @@ form {
   background-color: #fff;
 }
 
-/* Label styling */
 form label {
   display: block;
   margin-bottom: 12px;
@@ -454,7 +453,6 @@ form label {
   text-align: left;
 }
 
-/* Input and textarea styling */
 form input[type="email"],
 form textarea {
   width: 100%;
@@ -468,7 +466,6 @@ form textarea {
   box-sizing: border-box;
 }
 
-/* Button styling */
 form button[type="submit"] {
   display: inline-block;
   padding: 14px 20px;
@@ -487,18 +484,19 @@ form button[type="submit"]:hover {
 }
 
 .heart-icon {
-    font-size: 1rem;
-    color: #ff6b6b; /* Heart color */
-    animation: blink 1s infinite;
+  font-size: 1rem;
+  color: #ff6b6b;
+  animation: blink 1s infinite;
 }
 
 @keyframes blink {
-    0%, 100% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0.2;
-    }
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
 }
 
 /* Responsive adjustments */
@@ -510,7 +508,6 @@ form button[type="submit"]:hover {
   form button[type="submit"] {
     width: 100%;
   }
-
 
   .project-section .tabs ul li {
     font-size: 13px;
@@ -525,7 +522,7 @@ form button[type="submit"]:hover {
   .project-section .tabs {
     position: unset !important;
   }
-  
+
   .project-section .tab-content {
     margin-left: 0;
   }
@@ -536,158 +533,150 @@ form button[type="submit"]:hover {
     max-height: unset;
     min-height: unset;
   }
-
-
 }
 
 @media (max-width: 1400px) {
-    .project-section .tab-content .tab-item img {
-        height: 400px;
-    }
+  .project-section .tab-content .tab-item img {
+    height: 400px;
+  }
 }
 
 .skills {
+  .skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
 
-    .skill-list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 12px;
-  
-      .skill {
-        background-color: #1f1f1f;
-        padding: 12px 25px;
-        border-radius: 5px;
-        font-size: 1rem;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        color: #ffffff;
-        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
-        transition: transform 0.3s ease-in-out;
-  
-        &:hover {
-          transform: translateY(-5px);
-          background-color: #292929;
-        }
+    .skill {
+      background-color: #1f1f1f;
+      padding: 12px 25px;
+      border-radius: 5px;
+      font-size: 1rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #ffffff;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease-in-out;
+
+      &:hover {
+        transform: translateY(-5px);
+        background-color: #292929;
       }
     }
   }
-  
+}
 
 .fish-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden; /* To prevent the fish from moving outside the viewport */
-     /* Light blue background to represent water */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden; /* To prevent the fish from moving outside the viewport */
+  /* Light blue background to represent water */
 }
 
 .fish {
-    position: absolute;
-    width: 80px; /* Adjust size as needed */
-    animation: swim 8s infinite ease-in-out;
-    z-index: 99;
+  position: absolute;
+  width: 80px; /* Adjust size as needed */
+  animation: swim 8s infinite ease-in-out;
+  z-index: 99;
 }
 
 @keyframes swim {
-    0% {
-        transform: translateX(-100px) rotateY(0deg);
-    }
-    25% {
-        transform: translateX(50vw) translateY(100px) rotateY(15deg);
-    }
-    45% {
-        transform: translateX(100vw) translateY(200px) rotateY(-15deg);
-    }
-    55% {
-        transform: translateX(100vw) translateY(150px) rotateY(-150deg);
-    }
-    75% {
-        transform: translateX(50vw) translateY(100px) rotateY(-150deg);
-    }
-    100% {
-        transform: translateX(-100px) translateY(300px) rotateY(-150deg);
-    }
+  0% {
+    transform: translateX(-100px) rotateY(0deg);
+  }
+  25% {
+    transform: translateX(50vw) translateY(100px) rotateY(15deg);
+  }
+  45% {
+    transform: translateX(100vw) translateY(200px) rotateY(-15deg);
+  }
+  55% {
+    transform: translateX(100vw) translateY(150px) rotateY(-150deg);
+  }
+  75% {
+    transform: translateX(50vw) translateY(100px) rotateY(-150deg);
+  }
+  100% {
+    transform: translateX(-100px) translateY(300px) rotateY(-150deg);
+  }
 }
 
-
 .water-background {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  overflow: hidden;
 }
 
 .bubbles {
-    position: absolute;
-    bottom: -100px;
-    width: 20px;
-    height: 20px;
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 50%;
-    animation: bubble-rise 5s infinite ease-in-out;
-    opacity: 0;
+  position: absolute;
+  bottom: -100px;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  animation: bubble-rise 5s infinite ease-in-out;
+  opacity: 0;
 }
 
 @keyframes bubble-rise {
-    0% {
-        transform: translateY(0);
-        opacity: 0;
-    }
-    10% {
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(-1200px);
-        opacity: 0;
-    }
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-1200px);
+    opacity: 0;
+  }
 }
 
-/* Random positions and animations for each bubble */
 .bubbles:nth-child(1) {
-    left: 20%;
-    width: 15px;
-    height: 15px;
-    animation-duration: 7s;
-    animation-delay: 0s;
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-duration: 7s;
+  animation-delay: 0s;
 }
 
 .bubbles:nth-child(2) {
-    left: 50%;
-    width: 25px;
-    height: 25px;
-    animation-duration: 10s;
-    animation-delay: 2s;
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-duration: 10s;
+  animation-delay: 2s;
 }
 
 .bubbles:nth-child(3) {
-    left: 70%;
-    width: 10px;
-    height: 10px;
-    animation-duration: 6s;
-    animation-delay: 4s;
+  left: 70%;
+  width: 10px;
+  height: 10px;
+  animation-duration: 6s;
+  animation-delay: 4s;
 }
 
 .bubbles:nth-child(4) {
-    left: 30%;
-    width: 20px;
-    height: 20px;
-    animation-duration: 8s;
-    animation-delay: 1s;
+  left: 30%;
+  width: 20px;
+  height: 20px;
+  animation-duration: 8s;
+  animation-delay: 1s;
 }
 
 .bubbles:nth-child(5) {
-    left: 80%;
-    width: 30px;
-    height: 30px;
-    animation-duration: 9s;
-    animation-delay: 3s;
+  left: 80%;
+  width: 30px;
+  height: 30px;
+  animation-duration: 9s;
+  animation-delay: 3s;
 }
-
-
 
 .timeline {
   width: 100%;
@@ -697,13 +686,13 @@ form button[type="submit"]:hover {
 }
 
 .timeline::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 50%;
   width: 1px;
   height: 100%;
- border-left: 2px dashed #000;
+  border-left: 2px dashed #000;
   transform: translateX(-50%);
 }
 
@@ -730,7 +719,7 @@ form button[type="submit"]:hover {
 }
 
 .timeline-year::after {
-  content: '';
+  content: "";
   width: 15px;
   height: 15px;
   background-color: black;
@@ -742,7 +731,7 @@ form button[type="submit"]:hover {
 }
 
 .timeline-year::before {
-  content: '';
+  content: "";
   width: 30px;
   height: 1px;
   border-top: 2px dashed #000;
@@ -774,6 +763,7 @@ form button[type="submit"]:hover {
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
+
 .timeline-item:nth-child(even) {
   .timeline-content {
     margin-right: 40px;
@@ -785,6 +775,7 @@ form button[type="submit"]:hover {
     margin-left: 40px;
   }
 }
+
 .timeline h3 {
   margin: 0 0 10px;
   color: black;
@@ -828,6 +819,7 @@ form button[type="submit"]:hover {
   .timeline::before {
     left: 0;
   }
+
   .timeline-year::before {
     left: -18px !important;
     width: 20px !important;
@@ -849,7 +841,7 @@ form button[type="submit"]:hover {
 .nav-wrapper {
   overflow-x: hidden;
   white-space: nowrap;
-  width: calc(100% - 60px); /* Adjust based on button size */
+  width: calc(100% - 60px);
 }
 
 .nav-links {
@@ -876,89 +868,93 @@ button {
   justify-content: flex-end;
 }
 
-.nav-left-btn, .nav-right-btn {
+.nav-left-btn,
+.nav-right-btn {
   flex-shrink: 0;
   z-index: 1;
   display: none;
 }
 
-
-
 @media (max-width: 768px) {
-  .nav-left-btn, .nav-right-btn {
+  .nav-left-btn,
+  .nav-right-btn {
     display: block;
     background-color: transparent;
     color: #fff;
   }
   .header .navbar .nav-links {
-    justify-content: unset ;
+    justify-content: unset;
   }
-  
-  .header-scrolled .nav-left-btn, .header-scrolled .nav-right-btn {
+
+  .header-scrolled .nav-left-btn,
+  .header-scrolled .nav-right-btn {
     display: block;
     background-color: transparent;
     color: #000;
   }
 
-.header .navbar .logo {
-  font-size: 20px;
-  font-weight: 600;
-  display: none;
-}
+  .header .navbar .logo {
+    font-size: 20px;
+    font-weight: 600;
+    display: none;
+  }
 
-.header .navbar .nav-links li a {
-  font-size: 14px;
-  font-weight: 500;
-}
+  .header .navbar .nav-links li a {
+    font-size: 14px;
+    font-weight: 500;
+  }
 
-.header .navbar .nav-links {
-  padding: 0;
-}
+  .header .navbar .nav-links {
+    padding: 0;
+  }
 
-.header .navbar .nav-links li {
-  margin: 0 6px;
-}
+  .header .navbar .nav-links li {
+    margin: 0 6px;
+  }
 
-.header .navbar .nav-links {
-  margin: 0;
-}
+  .header .navbar .nav-links {
+    margin: 0;
+  }
 
-.header .hero h1 {
-  font-size: 32px;
-  margin-bottom: 10px;
-}
+  .header .hero h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
 
-.header .hero p {
-  font-size: 20px;
-}
+  .header .hero p {
+    font-size: 20px;
+  }
 
-section h2 {
-  font-size: 30px;
-}
+  section h2 {
+    font-size: 30px;
+  }
 
-section p, .about p, .skills p, .projects p, .contact p {
-  font-size: 16px;
-}
+  section p,
+  .about p,
+  .skills p,
+  .projects p,
+  .contact p {
+    font-size: 16px;
+  }
 
-section {
-  padding: 70px 15px 40px 15px;
-}
+  section {
+    padding: 70px 15px 40px 15px;
+  }
 
-.skills .skill-list .skill {
-  margin: 0;
-  font-size: 14px;
-  padding: 6px 10px;
-}
+  .skills .skill-list .skill {
+    margin: 0;
+    font-size: 14px;
+    padding: 6px 10px;
+  }
 
-.timeline-year {
-  font-size: 1rem !important;
-}
+  .timeline-year {
+    font-size: 1rem !important;
+  }
 
-.timeline-item {
-  margin-bottom: 25px;
+  .timeline-item {
+    margin-bottom: 25px;
+  }
 }
-}
-
 
 .testimonial {
   max-width: 400px;
@@ -968,8 +964,8 @@ section {
   background-color: #fff;
 }
 
-.testimonial  .stars span {
-  color: #a2cf40; /* Star color */
+.testimonial .stars span {
+  color: #a2cf40;
   font-size: 24px;
 }
 
@@ -981,14 +977,14 @@ section {
   font-weight: 600;
 }
 
-.testimonial  .description {
+.testimonial .description {
   font-size: 16px;
   color: #555;
   line-height: 1.4;
   margin-bottom: 15px;
 }
 
-.testimonial  .author {
+.testimonial .author {
   font-size: 14px;
   color: #333;
   font-weight: 600;
@@ -998,9 +994,9 @@ section {
   justify-content: center;
   margin-bottom: 0;
 
-   P {
+  P {
     margin-bottom: 0;
-   }
+  }
 
   strong {
     margin-right: 10px;

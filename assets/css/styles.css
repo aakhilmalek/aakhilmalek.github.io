@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 /* Optional: Normalize specific properties */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0; /* reset margins for headers */
 }
 
@@ -8,7 +13,8 @@ p {
   margin: 0 0 1em; /* add spacing below paragraphs */
 }
 
-ul, ol {
+ul,
+ol {
   margin: 0; /* reset margins for lists */
   padding: 0; /* reset padding for lists */
 }
@@ -110,8 +116,8 @@ body {
   border-color: rgb(255, 255, 255);
   position: absolute;
   width: 100%;
-  top: 0; /* Start hidden above the viewport */
-  transition: top 0.3s ease-in-out; /* Smooth transition */
+  top: 0;
+  transition: top 0.3s ease-in-out;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   z-index: 99;
@@ -390,7 +396,6 @@ section .container {
   font-size: 14px;
 }
 
-/* General form styling */
 form {
   max-width: 600px;
   margin: 0 auto;
@@ -399,7 +404,6 @@ form {
   background-color: #fff;
 }
 
-/* Label styling */
 form label {
   display: block;
   margin-bottom: 12px;
@@ -408,7 +412,6 @@ form label {
   text-align: left;
 }
 
-/* Input and textarea styling */
 form input[type=email],
 form textarea {
   width: 100%;
@@ -422,7 +425,6 @@ form textarea {
   box-sizing: border-box;
 }
 
-/* Button styling */
 form button[type=submit] {
   display: inline-block;
   padding: 14px 20px;
@@ -442,7 +444,7 @@ form button[type=submit]:hover {
 
 .heart-icon {
   font-size: 1rem;
-  color: #ff6b6b; /* Heart color */
+  color: #ff6b6b;
   animation: blink 1s infinite;
 }
 
@@ -579,7 +581,6 @@ form button[type=submit]:hover {
     opacity: 0;
   }
 }
-/* Random positions and animations for each bubble */
 .bubbles:nth-child(1) {
   left: 20%;
   width: 15px;
@@ -771,7 +772,7 @@ form button[type=submit]:hover {
 .nav-wrapper {
   overflow-x: hidden;
   white-space: nowrap;
-  width: calc(100% - 60px); /* Adjust based on button size */
+  width: calc(100% - 60px);
 }
 
 .nav-links {
@@ -798,14 +799,16 @@ button {
   justify-content: flex-end;
 }
 
-.nav-left-btn, .nav-right-btn {
+.nav-left-btn,
+.nav-right-btn {
   flex-shrink: 0;
   z-index: 1;
   display: none;
 }
 
 @media (max-width: 768px) {
-  .nav-left-btn, .nav-right-btn {
+  .nav-left-btn,
+  .nav-right-btn {
     display: block;
     background-color: transparent;
     color: #fff;
@@ -813,7 +816,8 @@ button {
   .header .navbar .nav-links {
     justify-content: unset;
   }
-  .header-scrolled .nav-left-btn, .header-scrolled .nav-right-btn {
+  .header-scrolled .nav-left-btn,
+  .header-scrolled .nav-right-btn {
     display: block;
     background-color: transparent;
     color: #000;
@@ -846,7 +850,11 @@ button {
   section h2 {
     font-size: 30px;
   }
-  section p, .about p, .skills p, .projects p, .contact p {
+  section p,
+  .about p,
+  .skills p,
+  .projects p,
+  .contact p {
     font-size: 16px;
   }
   section {
@@ -873,7 +881,7 @@ button {
 }
 
 .testimonial .stars span {
-  color: #a2cf40; /* Star color */
+  color: #a2cf40;
   font-size: 24px;
 }
 
