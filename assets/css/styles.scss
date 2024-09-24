@@ -391,26 +391,26 @@ section {
     }
   }
 }
-@keyframes wave {
-  0% {
-    background-position: 0% 40%;
-  }
-  50% {
-    background-position: 100% 40%;
-  }
-  100% {
-    background-position: 0% 40%;
-  }
-}
+
+// @keyframes wave {
+//   0% {
+//     background-position: 0% 40%;
+//   }
+//   50% {
+//     background-position: 100% 40%;
+//   }
+//   100% {
+//     background-position: 0% 40%;
+//   }
+// }
 
 .footer {
   background: $primary-color;
   color: #fff;
   padding: 20px;
   text-align: center;
-  background-image: url("https://images.unsplash.com/photo-1458682625221-3a45f8a844c7?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   position: relative;
-  animation: wave 40s infinite linear;
+  // animation: wave 40s infinite linear;
 
   &::before {
     content: "";
