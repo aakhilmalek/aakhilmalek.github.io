@@ -99,7 +99,7 @@ body {
   text-align: center;
   margin-top: 50px;
   position: relative;
-  z-index: 999;
+  z-index: 9;
 }
 .header .hero h1 {
   font-size: 48px;
