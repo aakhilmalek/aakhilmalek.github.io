@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Disallow specific sections or folders (optional)
+# Disallow: /private/
+# Disallow: /admin/
+
+Sitemap: https://aakhilmalek-dev.github.io/sitemap.xml
