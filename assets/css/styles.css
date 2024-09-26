@@ -949,7 +949,7 @@ button {
     font-size: 16px;
   }
   .testimonial .author {
-    font-size: 12px;
+    font-size: 10px;
   }
   section h2 {
     font-size: 28px;
@@ -973,5 +973,79 @@ button {
   }
   .testimonial .description {
     font-size: 14px;
+  }
+}
+.contact-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.contact-card p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact-card a {
+  color: #000;
+  text-decoration: none;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+}
+
+.section-with-border {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.section-with-border::before, .section-with-border::after {
+  content: "";
+  flex: 1;
+  height: 2px;
+  background-color: #333;
+}
+
+.section-with-border::before {
+  margin-right: 20px;
+}
+
+.section-with-border::after {
+  margin-left: 20px;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+@media (max-width: 767px) {
+  .circle {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+  .contact-card {
+    width: auto;
   }
 }/*# sourceMappingURL=styles.css.map */
