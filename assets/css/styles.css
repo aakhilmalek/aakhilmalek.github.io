@@ -941,7 +941,7 @@ button {
   overflow: hidden;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 330px) {
   .project-section .tab-content .tab-item .description p {
     font-size: 14px;
   }
@@ -969,10 +969,15 @@ button {
   .header .hero h1 {
     font-size: 30px;
     margin-bottom: 7px;
+    max-width: 300px;
+    margin: 0 auto 20px auto;
     text-wrap: balance;
   }
   .testimonial .description {
     font-size: 14px;
+  }
+  .timeline-content {
+    width: calc(100% - 50px);
   }
 }
 .contact-card {
